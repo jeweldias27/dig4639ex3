@@ -5,12 +5,51 @@ function aFunction() {
 
 let functionReference = aFunction
 {
-    function callFunctionTimes(functionParameter) {
+    function callFunctionTimes(functionParameter, times) {
         for (let i = 0; i < times; i++) {
-            return functionParameter()
+         functionParameter()
         }
     }
 }
+
+let arrayValues = [1, 2, 3, 4] 
+for (let item of arrayValues) {
+    console.log(item)
+}
+
 // console.log(aFunction())
 // console.log(functionReference())
-console.log(callFunctionTimes(functionReference, 3))
+ 
+let aFunc = function () {
+    return Math.random()
+}
+
+aFunc()
+aFunc = undefined
+
+let arrowFunction = () => Math.random()
+// console.log(arrowFunction())
+let arrowFunction2 = () => { a : 5}
+// console.log(arrowFunction2())
+ let arrowFunction3 = () => {
+    let ranNumer = Math.random();
+    return { a: ranNumer}
+ }
+//  console.log(arrowFunction3())
+
+let arrayNumbers = [1,2,3,4]
+for (let item of arrayNumbers) {
+        console.log(item)
+}
+
+arrayValues.forEach((item) => console.log(time))
+
+
+//Use the reduce method in combination with the concat method to “flatten” an array of arrays into a single array that has all the elements of the original arrays.
+
+let arrays = [[1, 2, 3], [4, 5], [6]];
+// Your code here.
+
+export function flattening (list) 
+// → [1, 2, 3, 4, 5, 6]
+
